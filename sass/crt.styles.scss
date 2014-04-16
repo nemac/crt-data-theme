@@ -1,0 +1,129 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit-no-css";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+
+
+article {
+	margin: 1em;
+}
+
+
+body {
+	background: white;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lato',Arial,sans-serif;
+}
+.l-branding {
+	background: white;
+	padding: 2em;
+	a {
+		color: $main-accent;
+	}
+
+	h1.site-name {
+		display: inline-block;
+	}
+	h1.site-name a, h2.site-name a {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: .8em;
+		font-weight: normal;
+	}
+}
+
+.l-region--header {
+	background: $main-accent;
+	min-height: 50px;
+	a {
+		color: white;
+	}
+}
+
+a {
+	color:$main-accent;
+}
+
+.l-content {
+	padding: 1em;
+}
+
+.crt-content {
+	@include grid-span(12,1);
+}
+
+.field--name-field-imageref {
+	float: right;
+	display: block;
+	position: relative;
+	margin: 1em;
+	clear: left;
+	background: #ccc;
+	padding: .5em;
+}
+
+.panels-flexible-region-1-content {
+	float: none;
+}
+
+.crt-sidebar-right {
+	@include grid-span(4,9);
+	float: right;
+	position: relative;
+	display: block;
+	margin: 0 0 1em 1em;
+	border: solid thin #ccc;
+
+	h2.pane-title {
+		color: $main-accent;
+		margin-top: 0;
+		text-transform: uppercase;
+		font-size: .8em;
+	}
+}
+
+.panels-flexible-1 .panels-flexible-region {
+	padding: 1em;
+}
+
+.crt-postscript-first {
+	@include grid-span(4,1);
+}
+
+.crt-postscript-second {
+	@include grid-span(4,4);
+}
+
+.crt-postscript-third {
+	@include grid-span(4,7);
+}
+
+.crt-footer {
+	@include grid-span(12,1);
+}
+
+.l-region--sidebar-first, .l-region--sidebar-second {
+	display: none;
+}
