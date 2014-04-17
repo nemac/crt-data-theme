@@ -36,16 +36,23 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Lato',Arial,sans-serif;
 }
-.l-branding {
-	background: white;
-	padding: 2em;
+
 	a {
 		color: $main-accent;
 	}
 
-	h1.site-name {
+.l-branding {
+	background: white;
+	padding: 2em;
+	@include grid-span(8,3);
+
+
+	.site-name, .site-logo {
 		display: inline-block;
+		float: left;
+		position: relative;
 	}
+
 	h1.site-name a, h2.site-name a {
 		text-transform: uppercase;
 		text-decoration: none;
@@ -54,24 +61,132 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
-.l-region--header {
+
+.l-region--branding {
+	position: relative;
+	display: block;
+	float: right;
+	margin: 1.8em 0;
+
+	nav#block-system-main-menu {
+
+		ul.menu {
+			margin:0;
+			padding:0;
+		}
+
+		li.leaf {
+			text-transform: uppercase;
+			list-style: none;
+			display: inline-block;
+			float: left;
+			position: relative;
+			line-height: 150%;
+			margin:0;
+
+			a {
+				color: #333;
+				font-family: 'Lato',Arial,sans-serif;
+				text-decoration: none;
+				padding: 15px 10px;
+			
+				.active {
+					color:$highlight;
+				}
+			}
+		}
+	}
+
+}
+
+/*.l-region--header {
 	background: $main-accent;
 	min-height: 50px;
+	clear: both;
+
 	a {
 		color: white;
 	}
+}*/
+
+
+.l-region--navigation {
+	background-color: #eef7ff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #bfd4e1;
+	clear: both;
+
+	li.leaf {
+		list-style-image: none;
+		list-style-type: none;
+	}
+
+	a {
+		color: black;
+		font-family: 'Lato',Arial,sans-serif;
+		text-decoration: none;
+	}
+
+	li a.active {
+		background-color: #eef7ff;
+		border-bottom: 5px solid #bfd4e1;
 }
+
+
+}
+
+
 
 a {
 	color:$main-accent;
 }
 
+
+
 .l-content {
-	padding: 1em;
+	clear: both;
+
+	h1 {
+	background: $main-accent;
+	min-height: 50px;
+	color: white;
+	font-weight: normal;
+	padding: .5em;	
+
+	}
+	.l-region {
+		padding: 1em;
+	}
+}
+
+ul.breadcrumb {
+	li {
+		list-style: none;
+		font-size: .7em;
+	}
+
+	li:after {
+		content: "»";
+		color: #333;
+		padding: .8em;
+	}
+
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
 }
 
 .crt-content {
 	@include grid-span(12,1);
+
+	.field--name-field-header {
+		font-family: 'Lato',Arial,sans-serif;
+		color: #333;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 }
 
 .field--name-field-imageref {
@@ -93,7 +208,7 @@ a {
 	float: right;
 	position: relative;
 	display: block;
-	margin: 0 0 1em 1em;
+	margin: 0 1em 1em 1em;
 	border: solid thin #ccc;
 
 	h2.pane-title {

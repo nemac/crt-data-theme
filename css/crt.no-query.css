@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/base\/_media\.scss}line{font-family:\000031}}
 img, media {
@@ -15,40 +16,123 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato',Arial,sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000340}}
+a {
+  color: #4679b2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000344}}
 .l-branding {
   background: white;
-  padding: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000342}}
-  .l-branding a {
-    color: #4679b2; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000346}}
-  .l-branding h1.site-name {
-    display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000349}}
+  padding: 2em;
+  width: 66.66667%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 16.66667%;
+  clear: none;
+  padding-right: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000350}}
+  .l-branding .site-name, .l-branding .site-logo {
+    display: inline-block;
+    float: left;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000356}}
   .l-branding h1.site-name a, .l-branding h2.site-name a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
     font-weight: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000357}}
-.l-region--header {
-  background: #4679b2;
-  min-height: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000360}}
-  .l-region--header a {
-    color: white; }
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000365}}
+.l-region--branding {
+  position: relative;
+  display: block;
+  float: right;
+  margin: 1.8em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000373}}
+  .l-region--branding nav#block-system-main-menu ul.menu {
+    margin: 0;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000378}}
+  .l-region--branding nav#block-system-main-menu li.leaf {
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+    float: left;
+    position: relative;
+    line-height: 150%;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000387}}
+    .l-region--branding nav#block-system-main-menu li.leaf a {
+      color: #333;
+      font-family: 'Lato',Arial,sans-serif;
+      text-decoration: none;
+      padding: 15px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000393}}
+      .l-region--branding nav#block-system-main-menu li.leaf a .active {
+        color: #60a1d3; }
+
+/*.l-region--header {
+	background: $main-accent;
+	min-height: 50px;
+	clear: both;
+
+	a {
+		color: white;
+	}
+}*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003113}}
+.l-region--navigation {
+  background-color: #eef7ff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #bfd4e1;
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003119}}
+  .l-region--navigation li.leaf {
+    list-style-image: none;
+    list-style-type: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003124}}
+  .l-region--navigation a {
+    color: black;
+    font-family: 'Lato',Arial,sans-serif;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003130}}
+  .l-region--navigation li a.active {
+    background-color: #eef7ff;
+    border-bottom: 5px solid #bfd4e1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003140}}
 a {
   color: #4679b2; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003146}}
 .l-content {
-  padding: 1em; }
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003149}}
+  .l-content h1 {
+    background: #4679b2;
+    min-height: 50px;
+    color: white;
+    font-weight: normal;
+    padding: .5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003157}}
+  .l-content .l-region {
+    padding: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003163}}
+ul.breadcrumb li {
+  list-style: none;
+  font-size: .7em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003168}}
+ul.breadcrumb li:after {
+  content: "»";
+  color: #333;
+  padding: .8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003174}}
+ul.breadcrumb a {
+  text-transform: uppercase;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003181}}
 .crt-content {
   width: 100%;
   float: right;
@@ -56,8 +140,14 @@ a {
   margin-right: 0;
   clear: none;
   padding-right: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003184}}
+  .crt-content .field--name-field-header {
+    font-family: 'Lato',Arial,sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003192}}
 .field--name-field-imageref {
   float: right;
   display: block;
@@ -67,11 +157,11 @@ a {
   background: #ccc;
   padding: .5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003202}}
 .panels-flexible-region-1-content {
   float: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003206}}
 .crt-sidebar-right {
   width: 33.33333%;
   float: right;
@@ -82,20 +172,20 @@ a {
   float: right;
   position: relative;
   display: block;
-  margin: 0 0 1em 1em;
+  margin: 0 1em 1em 1em;
   border: solid thin #ccc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003214}}
   .crt-sidebar-right h2.pane-title {
     color: #4679b2;
     margin-top: 0;
     text-transform: uppercase;
     font-size: .8em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003222}}
 .panels-flexible-1 .panels-flexible-region {
   padding: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003226}}
 .crt-postscript-first {
   width: 33.33333%;
   float: left;
@@ -104,7 +194,7 @@ a {
   clear: none;
   padding-right: 15px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003230}}
 .crt-postscript-second {
   width: 33.33333%;
   float: left;
@@ -113,7 +203,7 @@ a {
   clear: none;
   padding-right: 15px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003234}}
 .crt-postscript-third {
   width: 33.33333%;
   float: left;
@@ -122,7 +212,7 @@ a {
   clear: none;
   padding-right: 15px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003238}}
 .crt-footer {
   width: 100%;
   float: right;
@@ -131,6 +221,6 @@ a {
   clear: none;
   padding-right: 15px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/crt\.styles\.scss}line{font-family:\00003242}}
 .l-region--sidebar-first, .l-region--sidebar-second {
   display: none; }
