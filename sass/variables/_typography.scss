@@ -1,1 +1,129 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
+@import "../abstractions/*";
+@import "compass/typography/vertical_rhythm";
+
+
+$base-font-family:'Lato',Arial,sans-serif;
+
+$base-font-weight: 400;
+$base-font-color: #303033;
+$base-font-size: 20px;
+$base-line-height: 32px;
+$rhythm-unit: "rem";
+$rem-with-px-fallback: false;
+
+$tiny-font-size: 10px;
+$tiny-font-leading: 0.75;
+$small-font-size: 14px;
+$small-font-leading: 0.75;
+$base-font-size: 18px;
+$base-font-leading: 1;
+$medium-font-size: 24px;
+$medium-font-leading: 1.25;
+$large-font-size: 28px;
+$large-font-leading: 1.25;
+$xlarge-font-size: 36px;
+$xlarge-font-leading: 1.5;
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:$base-font-family;
+}
+
+%t-ultrastrong {
+ font-weight: 900;
+}
+%t-strong {
+ font-weight: 700;
+}
+%t-regular {
+ font-weight: 400;
+}
+%t-light {
+ font-weight: 300;
+}
+%t-ultralight {
+ font-weight: 200;
+}
+
+// Type size variants 
+%t-tiny {
+ @include typeSize(tiny);
+}
+%t-small {
+ @include typeSize(small);
+}
+%t-base {
+ @include typeSize(base);
+}
+%t-medium {
+ @include typeSize(medium);
+}
+%t-large {
+ @include typeSize(large);
+}
+%t-xlarge {
+ @include typeSize(xlarge);
+}
+.t-tiny {
+ @include typeSize(tiny);
+}
+.t-small {
+ @include typeSize(small);
+}
+.t-base {
+ @include typeSize(base);
+}
+.t-medium {
+ @include typeSize(medium);
+}
+.t-large {
+ @include typeSize(large);
+}
+.t-xlarge {
+ @include typeSize(xlarge);
+}
+// Type — headings
+#{headings(4)} {
+ margin: 0;
+}
+
+html {
+	font-family: $base-font-family;
+}
+
+
+h1 {
+ @extend %t-xlarge;
+}
+h2 {
+ @extend %t-large;
+}
+h3 {
+ @extend %t-medium;
+}
+h4 {
+ @extend %t-base;
+
+}
+
+h5 {
+	 @extend %t-base;
+	 text-transform: uppercase;
+	 color: #333;
+}
+
+ header > p {
+  @extend %t-large;
+}
+
+p {
+ @extend %t-base;
+ @extend %t-light;
+}
+small {
+ @extend %t-small;
+}
+strong, b {
+ @extend %t-strong;
+ font-weight: bold;
+}

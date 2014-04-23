@@ -23,6 +23,11 @@
 
 
 
+.l-page {
+	max-width: 1440px;
+	margin:auto;
+}
+
 article {
 	margin: 1em;
 }
@@ -32,19 +37,25 @@ body {
 	background: white;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Lato',Arial,sans-serif;
+strong {
+	color:#333;
 }
 
-	a {
-		color: $main-accent;
+
+
+a {
+	color: $main-accent;
+	text-decoration: none;
+}
+
+a:hover {
+		text-decoration:underline;
 	}
 
 .l-branding {
 	background: white;
 	padding: 2em;
-	@include grid-span(8,3);
+	@include grid-span(12,1);
 
 
 	.site-name, .site-logo {
@@ -86,35 +97,45 @@ h1,h2,h3,h4,h5,h6 {
 
 			a {
 				color: #333;
-				font-family: 'Lato',Arial,sans-serif;
-				text-decoration: none;
+				font-family:$base-font-family;
 				padding: 15px 10px;
 			
-				.active {
-					color:$highlight;
 				}
+
+			.active {
+				color: $highlight;
 			}
+
 		}
 	}
 
 }
 
-/*.l-region--header {
-	background: $main-accent;
-	min-height: 50px;
+header {
 	clear: both;
-
-	a {
-		color: white;
-	}
-}*/
+}
 
 
 .l-region--navigation {
-	background-color: #eef7ff;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #bfd4e1;
+
 	clear: both;
+	display: block;
+
+
+	ul.menu {
+		clear: both;
+		border-bottom: 1px solid #bfd4e1;
+		float: left;
+		-webkit-padding-end: 40px;
+		width: 100%;
+		box-sizing:border-box;
+		}
+
+	li {
+		float: left;
+		position: relative;
+		display: block;
+	}
 
 	li.leaf {
 		list-style-image: none;
@@ -123,8 +144,17 @@ h1,h2,h3,h4,h5,h6 {
 
 	a {
 		color: black;
-		font-family: 'Lato',Arial,sans-serif;
-		text-decoration: none;
+		font-family:$base-font-family;
+		position: relative;
+		display: block;
+		padding: 10px 15px;
+		border-bottom: 5px solid #fff;
+
+	}
+
+	a:hover {
+		text-decoration:none;
+		border-bottom: 5px solid #bfd4e1;
 	}
 
 	li a.active {
@@ -136,33 +166,35 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-
-a {
-	color:$main-accent;
-}
-
-
-
 .l-content {
 	clear: both;
+	margin-top: 1em;
 
 	h1 {
 	background: $main-accent;
-	min-height: 50px;
 	color: white;
 	font-weight: normal;
-	padding: .5em;	
-
-	}
-	.l-region {
-		padding: 1em;
+	padding: .2em;	
+	clear: both;
+	margin-bottom: .5em;
+	text-align: left;
 	}
 }
 
+
+
 ul.breadcrumb {
+	padding-bottom: 5px;
+	margin:0;
+	clear: both;
+	display: none;
+
 	li {
 		list-style: none;
 		font-size: .7em;
+		position: relative;
+		float: left;
+		display: inline-block;
 	}
 
 	li:after {
@@ -173,7 +205,6 @@ ul.breadcrumb {
 
 	a {
 		text-transform: uppercase;
-		text-decoration: none;
 	}
 
 }
@@ -181,46 +212,227 @@ ul.breadcrumb {
 .crt-content {
 	@include grid-span(12,1);
 
-	.field--name-field-header {
-		font-family: 'Lato',Arial,sans-serif;
-		color: #333;
-		text-transform: uppercase;
-		font-weight: bold;
+h4 {
+	font-weight: normal;
+	font-size: 1.1em;
+	padding: 1em;
+	border: solid thin #ccc;
+	text-align: center;
+	margin:2em;
+	clear: both;
+}
+
+}
+
+.topic-content-right {
+	@include grid-span(10,3);
+	position: relative;
+	display: block;
+	float: right;
+	clear: right;
+}
+
+
+.table_of_contents {
+	border: thin solid #ccc;
+	display: inline-block;
+	position: relative;
+	float: none;
+	padding: 1em;
+	font-family:$base-font-family;
+	font-size: .8em;
+	margin-bottom: 1em;
+}
+
+
+.crt-content-topic {
+	width: 100%;
+	float: none;
+
+
+
+	ol {
+		margin: 0;
+		-webkit-padding-start: 1em;
+	}
+
+
+}
+
+
+.topic-landing {
+	text-align: center;
+	clear: both;
+
+	.view-header {
+		text-align: left;
 	}
 }
 
-.field--name-field-imageref {
+
+
+
+.topic-thumb {
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	width: 125px;
+	margin:auto 1em auto 1em;
+	height: 100%;
+	line-height: 100%;
+}
+
+.field--name-field-header {
+	font-family:$base-font-family;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.submitted {
+	display: none;
+}
+
+.field--name-field-left-image,
+.field--name-field-right-image {
+	display: block;
+	position: relative;
+}
+
+.field--name-field-left-image {
+	float: left;
+	clear: right;
+}
+
+.field--name-field-right-image {
 	float: right;
+	clear: left;
+}
+
+.field--name-field-left-image,
+.field--name-field-right-image,
+.field--name-field-featured-image {
 	display: block;
 	position: relative;
 	margin: 1em;
-	clear: left;
-	background: #ccc;
-	padding: .5em;
+	background: $secondary-accent-2;
+	padding: .2em .2em 0 .2em;
+
+	article {
+		margin:0;
+	}
+	h2, .submitted {
+		display: none;
+	}
 }
 
 .panels-flexible-region-1-content {
 	float: none;
 }
 
-.crt-sidebar-right {
-	@include grid-span(4,9);
-	float: right;
+
+h2.pane-title {
+	color: $main-accent;
+	text-transform: uppercase;
+	font-size: .8em;
+	clear: both;
+}
+
+.panels-flexible-2, .panels-flexible-1 {
+
+	.panels-flexible-region-inside-first, .panels-flexible-region-inside-last {
+		padding: 0 .5em 0 .5em;
+	}
+
+	.crt-sidebar-right {
+		@include grid-span(4,9);
+		float: right;
+		position: relative;
+		display: block;
+		border: solid thin #ccc;
+		margin-left: 1em;
+		font-size: $small-font-size;
+
+		a {
+			font-weight: normal;
+		}
+
+		.view-content {
+			padding: 0;
+
+			a.views-more-link {
+				text-transform: uppercase;
+				font-size: .8em;
+			}
+		}
+
+		.pane-tools-views {
+			margin-bottom: 1em;
+		}
+
+		.pane-case-study-views {
+			clear:both;
+			margin-bottom: 1em;
+		}
+
+		table td.label {
+			text-align: right;
+			font-weight: bold;
+			padding: .25em;
+			color:#333;
+			vertical-align: top;
+		}
+
+		table td.content {
+			text-align: left;
+			padding: .25em;
+			vertical-align: top;
+		}
+
+		tr.odd {
+			background: white;
+		}
+
+		tr.even {
+			background: $secondary-accent-1;
+		}
+
+		.entity-field-collection-item {
+			margin-bottom: 1em;
+		}
+
+	}
+
+.topic-content-left {
+	@include grid-span(2,1);
+	float: left;
 	position: relative;
 	display: block;
-	margin: 0 1em 1em 1em;
-	border: solid thin #ccc;
+}
 
-	h2.pane-title {
-		color: $main-accent;
-		margin-top: 0;
-		text-transform: uppercase;
-		font-size: .8em;
+	.crt-sidebar-left {
+
+	border: solid thin #ccc;
+	}
+}
+
+
+
+
+.panels-flexible-region-2-sidebar_left {
+	padding:0;
+
+	h4 {
+		margin:.5em;
+	}
+
+	a {
+		font-weight: normal;
 	}
 }
 
 .panels-flexible-1 .panels-flexible-region {
-	padding: 1em;
+	padding: 0 1em 1em 1em;
 }
 
 .crt-postscript-first {

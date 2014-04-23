@@ -1,4 +1,99 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000328}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", Arial, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000335}}
+strong, b {
+  font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000341}}
+p {
+  font-weight: 300; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000352}}
+small {
+  font-size: 0.77778em;
+  line-height: 2.28571em;
+  line-height: 1.33333em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000355}}
+h4, h5, p {
+  font-size: 1em;
+  line-height: 1.77778em;
+  line-height: 1.77778em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000358}}
+h3 {
+  font-size: 1.33333em;
+  line-height: 1.33333em;
+  line-height: 2.22222em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000361}}
+h2, header > p {
+  font-size: 1.55556em;
+  line-height: 1.14286em;
+  line-height: 2.22222em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000364}}
+h1 {
+  font-size: 2em;
+  line-height: 1.77778em;
+  line-height: 2.66667em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000367}}
+.t-tiny {
+  font-size: 0.55556em;
+  line-height: 3.2em;
+  line-height: 1.33333em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000370}}
+.t-small {
+  font-size: 0.77778em;
+  line-height: 2.28571em;
+  line-height: 1.33333em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000373}}
+.t-base {
+  font-size: 1em;
+  line-height: 1.77778em;
+  line-height: 1.77778em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000376}}
+.t-medium {
+  font-size: 1.33333em;
+  line-height: 1.33333em;
+  line-height: 2.22222em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000379}}
+.t-large {
+  font-size: 1.55556em;
+  line-height: 1.14286em;
+  line-height: 2.22222em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000382}}
+.t-xlarge {
+  font-size: 2em;
+  line-height: 1.77778em;
+  line-height: 2.66667em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000386}}
+h1, h2, h3, h4 {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\0000390}}
+html {
+  font-family: "Lato", Arial, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\00003109}}
+h5 {
+  text-transform: uppercase;
+  color: #333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/vsites\/crt-dev\.nemac\.org\/project\/html\/sites\/all\/themes\/crt\/sass\/variables\/_typography\.scss}line{font-family:\00003126}}
+strong, b {
+  font-weight: bold; }
+
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/rvm\/gems\/ruby-1\.9\.3-p545\@omega\.crt\/gems\/compass-normalize-1\.5\/stylesheets\/normalize\/_html5\.scss}line{font-family:\0000320}}
