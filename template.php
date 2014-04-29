@@ -35,7 +35,13 @@ function crt_field__field_content__topic($variables) {
   // Render the items.
   $output .= '<div class="field__items"' . $variables['content_attributes'] . '>';
   foreach ($variables['items'] as $delta => $item) {
-    $classes = 'field__item ' . ($delta % 2 ? 'odd' : 'even');
+    $element = current($item['entity']['field_collection_item']);
+    if (array_key_exists('field_feature', $element) && $element['field_feature']['#items']['0']['value'] == '1') {
+      $feature = TRUE;
+    } else {
+      $feature = FALSE;
+    }
+    $classes = 'field__item ' . ($delta % 2 ? 'odd' : 'even') . ($feature ? ' crt-feature' : '');
     $output .= '<div class="' . $classes . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
   }
   $output .= '</div>';
@@ -70,7 +76,13 @@ function crt_field__field_content__tool($variables) {
   // Render the items.
   $output .= '<div class="field__items"' . $variables['content_attributes'] . '>';
   foreach ($variables['items'] as $delta => $item) {
-    $classes = 'field__item ' . ($delta % 2 ? 'odd' : 'even');
+    $element = current($item['entity']['field_collection_item']);
+    if (array_key_exists('field_feature', $element) && $element['field_feature']['#items']['0']['value'] == '1') {
+      $feature = TRUE;
+    } else {
+      $feature = FALSE;
+    }
+    $classes = 'field__item ' . ($delta % 2 ? 'odd' : 'even') . ($feature ? ' crt-feature' : '');
     $output .= '<div class="' . $classes . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
   }
   $output .= '</div>';
@@ -105,7 +117,13 @@ function crt_field__field_content__case_study($variables) {
   // Render the items.
   $output .= '<div class="field__items"' . $variables['content_attributes'] . '>';
   foreach ($variables['items'] as $delta => $item) {
-    $classes = 'field__item ' . ($delta % 2 ? 'odd' : 'even');
+    $element = current($item['entity']['field_collection_item']);
+    if (array_key_exists('field_feature', $element) && $element['field_feature']['#items']['0']['value'] == '1') {
+      $feature = TRUE;
+    } else {
+      $feature = FALSE;
+    }
+    $classes = 'field__item ' . ($delta % 2 ? 'odd' : 'even') . ($feature ? ' crt-feature' : '');
     $output .= '<div class="' . $classes . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
   }
   $output .= '</div>';

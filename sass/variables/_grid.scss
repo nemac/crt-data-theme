@@ -1,2 +1,9 @@
+@import "breakpoint";
+
 $grids: 12;
 $gutters: 15px;
+
+$wide:961px 1440px;
+$normal:721px 960px;
+$narrow:481px 720px;
+$mobile: 0px 480px;

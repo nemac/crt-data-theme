@@ -1,5 +1,6 @@
 @import "compass/typography/vertical_rhythm";
 
+
 @mixin typeSize($size) {
  @if $size == "tiny" {
   @include adjust-font-size-to($tiny-font-size);

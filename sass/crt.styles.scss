@@ -20,6 +20,7 @@
 @import "abstractions/**/*";
 @import "base/**/*";
 @import "components/**/*";
+@import "breakpoint";
 
 
 
@@ -35,6 +36,12 @@ article {
 
 body {
 	background: white;
+}
+
+@include breakpoint($narrow) {
+	body {
+		background: yellow;
+	}
 }
 
 strong {
@@ -212,16 +219,28 @@ ul.breadcrumb {
 .crt-content {
 	@include grid-span(12,1);
 
-h4 {
-	font-weight: normal;
-	font-size: 1.1em;
-	padding: 1em;
-	border: solid thin #ccc;
-	text-align: center;
-	margin:2em;
-	clear: both;
-}
+	.field--name-field-pull-quote {
+		font-weight: normal;
+		font-size: 1.1em;
+	   	padding: 1em;
+		border: solid thin #ccc;
+		text-align: center;
+		margin:2em;
+		clear: both;
+	}
 
+
+.crt-feature {
+			margin:2em 4em 2em 4em;
+
+			.field--name-field-header {
+				background: $main-accent;
+				color: white;
+				padding: 1em;
+				font-weight: normal;
+				font-style: italic;
+			}
+		}
 }
 
 .topic-content-right {
@@ -287,6 +306,7 @@ h4 {
 	color: #333;
 	text-transform: uppercase;
 	font-weight: bold;
+	clear: both;
 }
 
 .submitted {
@@ -297,16 +317,25 @@ h4 {
 .field--name-field-right-image {
 	display: block;
 	position: relative;
+	width: 220px;
 }
 
 .field--name-field-left-image {
 	float: left;
-	clear: right;
 }
 
 .field--name-field-right-image {
 	float: right;
-	clear: left;
+}
+
+.field--name-field-featured-image {
+	text-align: center;
+}
+
+.field--name-field-featured-image .field--name-field-image-description {
+	max-width: 800px;
+	margin:auto;
+	overflow: visible;
 }
 
 .field--name-field-left-image,
@@ -315,7 +344,7 @@ h4 {
 	display: block;
 	position: relative;
 	margin: 1em;
-	background: $secondary-accent-2;
+	background: none;
 	padding: .2em .2em 0 .2em;
 
 	article {
@@ -324,6 +353,30 @@ h4 {
 	h2, .submitted {
 		display: none;
 	}
+
+	.field--name-field-image-description {
+		@extend %t-small;
+	}
+}
+
+td.table-header {
+	color: $main-accent;
+	text-transform: uppercase;
+	font-size: .8em;
+	clear: both;
+	padding-bottom: 1em
+}
+
+th {
+	background: $secondary-accent-1;
+	padding: .5em;
+	color: #333;
+}
+
+table tr td {
+	 @extend %t-base;
+	 @extend %t-light;
+	 padding: .5em;
 }
 
 .panels-flexible-region-1-content {
@@ -375,6 +428,10 @@ h2.pane-title {
 			margin-bottom: 1em;
 		}
 
+		table tr td {
+				padding: 0;
+			}
+
 		table td.label {
 			text-align: right;
 			font-weight: bold;
@@ -387,6 +444,13 @@ h2.pane-title {
 			text-align: left;
 			padding: .25em;
 			vertical-align: top;
+			word-wrap:break-word;
+			word-break:break-all;
+			word-break: break-word;
+
+			-webkit-hyphens: auto;
+		   	-moz-hyphens: auto;
+		     hyphens: auto;
 		}
 
 		tr.odd {
